@@ -1,0 +1,13 @@
+{
+  "name": "tattle-tweet",
+  "version": "0.0.1",
+  "private": false,
+  "dependencies": {
+    "underscore": "~1.4.4",
+    "async": "*",
+    "colors": "*",
+    "dateformat": "1.0.6-1.2.3",
+    "ping": "*",
+    "twitter": "*"
+  }
+}

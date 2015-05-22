@@ -63,7 +63,11 @@ var WORK_FUNCTION = function() {
         logger.info( status );
 
         twitterClient.post( 'statuses/update', { status: util.format( TWEET_BODY, diffSeconds ) },  function( error, tweet, response ){
-          logger.debug( tweet );
+
+          if ( tweet && tweet.truncated ) {
+            logger.error('tweet was too long and was truncated by twitter, adjust config.twitter.update_body' );
+          }
+
           if( error ) {
             return logger.error( 'error while tweeting', error );
           }

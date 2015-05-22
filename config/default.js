@@ -13,6 +13,6 @@ module.exports = {
     consumer_secret     : '',
     access_token_key    : '',
     access_token_secret : '',
-    update_body         : 'Back online, my connection was down for %d seconds #InternetHealthTest #TattleTweet'
+    update_body         : 'Back online, my connection was down for %d seconds #InternetHealthTest #TattleTweet https://github.com/JavaChilly/tattle-tweet'
   }
 };
